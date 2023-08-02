@@ -19,6 +19,7 @@ const Input: React.FC<InputProps> = ({
     type,
 }) => {
     return (
+    	// input styling
         <div className="relative">
             <input
                 onChange={onChange}
