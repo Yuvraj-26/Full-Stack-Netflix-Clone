@@ -9,7 +9,7 @@ interface PlayButtonProps {
 const PlayButton: React.FC<PlayButtonProps> = ({ movieId }) => {
   const router = useRouter();
 
-  // return button an dplay icon
+  // return button and play icon
   return (
     <button 
       onClick={() => router.push(`/watch/${movieId}`)}

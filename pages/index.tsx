@@ -13,10 +13,8 @@ import useInfoModalStore from '@/hooks/useInfoModalStore';
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
 
-  // if no session exists
   if (!session) {
     return {
-      // redirect to auth
       redirect: {
         destination: '/auth',
         permanent: false,
