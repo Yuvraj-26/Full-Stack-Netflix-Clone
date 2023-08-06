@@ -19,6 +19,7 @@
     "bcrypt": "^5.1.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
+    "lodash": "^4.17.21",
     "next": "13.4.10",
     "next-auth": "^4.22.3",
     "react": "18.2.0",
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
+    "@types/lodash": "^4.14.196",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.26",
     "prisma": "^5.0.0",
