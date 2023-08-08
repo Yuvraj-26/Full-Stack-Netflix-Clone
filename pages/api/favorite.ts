@@ -13,19 +13,19 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       // get movie id
       const { movieId } = req.body;
-      
+
       // find a movie using the movie id
       const existingMovie = await prismadb.movie.findUnique({
         where: {
           id: movieId,
         }
       });
-      
+
       // if no existing movie
       if (!existingMovie) {
         throw new Error('Invalid ID');
       }
-      
+
       // update user and push favourited movie to prisma schema 
       const user = await prismadb.user.update({
         where: {
@@ -37,7 +37,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           }
         }
       });
-      
+
       // return updated user
       return res.status(200).json(user);
     }
@@ -78,7 +78,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       // return updated  user
       return res.status(200).json(updatedUser);
     }
-    
+
     // handle if not POST OR DELETE method
     return res.status(405).end();
     // error handling

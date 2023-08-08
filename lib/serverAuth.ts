@@ -22,7 +22,7 @@ const serverAuth = async (req: NextApiRequest, res: NextApiResponse) => {
       email: session.user.email,
     }
   });
-  
+
   // if no current user
   if (!currentUser) {
     throw new Error('Not signed in');

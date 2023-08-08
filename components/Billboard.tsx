@@ -47,9 +47,9 @@ const Billboard: React.FC = () => {
               hover:bg-opacity-20
               transition
             "
-            >
-              <InformationCircleIcon className="w-4 md:w-7 mr-1" />
-              More Info
+          >
+            <InformationCircleIcon className="w-4 md:w-7 mr-1" />
+            More Info
           </button>
         </div>
       </div>

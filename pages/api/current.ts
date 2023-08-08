@@ -5,7 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   try {
     // limit function to only GET requests
     if (req.method !== 'GET') {
-        // status 405 for wrong method
+      // status 405 for wrong method
       return res.status(405).end();
     }
 
